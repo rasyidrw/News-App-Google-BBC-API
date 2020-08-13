@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,8 @@
 		275E838624A4CC0D006B82BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 275E838424A4CC0D006B82BE /* LaunchScreen.storyboard */; };
 		275E839124A4CC0D006B82BE /* News_App_Google_BBCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275E839024A4CC0D006B82BE /* News_App_Google_BBCTests.swift */; };
 		275E839C24A4CC0D006B82BE /* News_App_Google_BBCUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275E839B24A4CC0D006B82BE /* News_App_Google_BBCUITests.swift */; };
+		275E83AB24A4D045006B82BE /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 275E83AA24A4D045006B82BE /* SwiftyJSON */; };
+		275E83AE24A4D0C5006B82BE /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 275E83AD24A4D0C5006B82BE /* SDWebImageSwiftUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				275E83AE24A4D0C5006B82BE /* SDWebImageSwiftUI in Frameworks */,
+				275E83AB24A4D045006B82BE /* SwiftyJSON in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,6 +156,10 @@
 			dependencies = (
 			);
 			name = "News-App-Google&BBC";
+			packageProductDependencies = (
+				275E83AA24A4D045006B82BE /* SwiftyJSON */,
+				275E83AD24A4D0C5006B82BE /* SDWebImageSwiftUI */,
+			);
 			productName = "News-App-Google&BBC";
 			productReference = 275E837624A4CC0A006B82BE /* News-App-Google&BBC.app */;
 			productType = "com.apple.product-type.application";
@@ -224,6 +232,10 @@
 				Base,
 			);
 			mainGroup = 275E836D24A4CC0A006B82BE;
+			packageReferences = (
+				275E83A924A4D045006B82BE /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				275E83AC24A4D0C5006B82BE /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = 275E837724A4CC0A006B82BE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -594,6 +606,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		275E83A924A4D045006B82BE /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		275E83AC24A4D0C5006B82BE /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		275E83AA24A4D045006B82BE /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 275E83A924A4D045006B82BE /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+		275E83AD24A4D0C5006B82BE /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 275E83AC24A4D0C5006B82BE /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 275E836E24A4CC0A006B82BE /* Project object */;
 }

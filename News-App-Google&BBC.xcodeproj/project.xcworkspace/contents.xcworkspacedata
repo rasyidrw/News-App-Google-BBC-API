@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:News-App-Google&amp;BBC.xcodeproj">
+      location = "self:">
    </FileRef>
 </Workspace>
